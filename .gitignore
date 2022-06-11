@@ -1,76 +1,93 @@
-.swiftlint.yml
-Podfile
-Podfile.lock
-R.generated.swift
-Dice.xcworkspace/contents.xcworkspacedata
-Dice.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-Pods/Manifest.lock
-Pods/Pods.xcodeproj/project.pbxproj
-Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/Pods-Dice.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/R.swift.Library.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/R.swift.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/SwiftLint.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/xcschememanagement.plist
-Pods/R.swift/License
-Pods/R.swift/rswift
-Pods/R.swift.Library/License
-Pods/R.swift.Library/Readme.md
-Pods/R.swift.Library/Library/Core/ColorResource.swift
-Pods/R.swift.Library/Library/Core/FileResource.swift
-Pods/R.swift.Library/Library/Core/FontResource.swift
-Pods/R.swift.Library/Library/Core/Identifier.swift
-Pods/R.swift.Library/Library/Core/ImageResource.swift
-Pods/R.swift.Library/Library/Core/NibResource.swift
-Pods/R.swift.Library/Library/Core/ReuseIdentifierProtocol.swift
-Pods/R.swift.Library/Library/Core/StoryboardResource.swift
-Pods/R.swift.Library/Library/Core/StoryboardSegueIdentifierProtocol.swift
-Pods/R.swift.Library/Library/Core/StoryboardViewControllerResource.swift
-Pods/R.swift.Library/Library/Core/StringResource.swift
-Pods/R.swift.Library/Library/Core/Validatable.swift
-Pods/R.swift.Library/Library/Foundation/Bundle+FileResource.swift
-Pods/R.swift.Library/Library/Foundation/Data+FileResource.swift
-Pods/R.swift.Library/Library/UIKit/NibResource+UIKit.swift
-Pods/R.swift.Library/Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift
-Pods/R.swift.Library/Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift
-Pods/R.swift.Library/Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift
-Pods/R.swift.Library/Library/UIKit/UIColor+ColorResource.swift
-Pods/R.swift.Library/Library/UIKit/UIFont+FontResource.swift
-Pods/R.swift.Library/Library/UIKit/UIImage+ImageResource.swift
-Pods/R.swift.Library/Library/UIKit/UINib+NibResource.swift
-Pods/R.swift.Library/Library/UIKit/UIStoryboard+StoryboardResource.swift
-Pods/R.swift.Library/Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift
-Pods/R.swift.Library/Library/UIKit/UITableView+ReuseIdentifierProtocol.swift
-Pods/R.swift.Library/Library/UIKit/UIViewController+NibResource.swift
-Pods/R.swift.Library/Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift
-Pods/SwiftLint/LICENSE
-Pods/SwiftLint/swiftlint
-Pods/Target Support Files/Pods-Dice/Pods-Dice-acknowledgements.markdown
-Pods/Target Support Files/Pods-Dice/Pods-Dice-acknowledgements.plist
-Pods/Target Support Files/Pods-Dice/Pods-Dice-dummy.m
-Pods/Target Support Files/Pods-Dice/Pods-Dice-frameworks-Debug-input-files.xcfilelist
-Pods/Target Support Files/Pods-Dice/Pods-Dice-frameworks-Debug-output-files.xcfilelist
-Pods/Target Support Files/Pods-Dice/Pods-Dice-frameworks-Release-input-files.xcfilelist
-Pods/Target Support Files/Pods-Dice/Pods-Dice-frameworks-Release-output-files.xcfilelist
-Pods/Target Support Files/Pods-Dice/Pods-Dice-frameworks.sh
-Pods/Target Support Files/Pods-Dice/Pods-Dice-Info.plist
-Pods/Target Support Files/Pods-Dice/Pods-Dice-umbrella.h
-Pods/Target Support Files/Pods-Dice/Pods-Dice.debug.xcconfig
-Pods/Target Support Files/Pods-Dice/Pods-Dice.modulemap
-Pods/Target Support Files/Pods-Dice/Pods-Dice.release.xcconfig
-Pods/Target Support Files/R.swift/R.swift.debug.xcconfig
-Pods/Target Support Files/R.swift/R.swift.release.xcconfig
-Pods/Target Support Files/R.swift.Library/R.swift.Library-dummy.m
-Pods/Target Support Files/R.swift.Library/R.swift.Library-Info.plist
-Pods/Target Support Files/R.swift.Library/R.swift.Library-prefix.pch
-Pods/Target Support Files/R.swift.Library/R.swift.Library-umbrella.h
-Pods/Target Support Files/R.swift.Library/R.swift.Library.debug.xcconfig
-Pods/Target Support Files/R.swift.Library/R.swift.Library.modulemap
-Pods/Target Support Files/R.swift.Library/R.swift.Library.release.xcconfig
-Pods/Target Support Files/SwiftLint/SwiftLint.debug.xcconfig
-Pods/Target Support Files/SwiftLint/SwiftLint.release.xcconfig
-Resorces/inverted-dice-1.png
-Resorces/inverted-dice-2.png
-Resorces/inverted-dice-3.png
-Resorces/inverted-dice-4.png
-Resorces/inverted-dice-5.png
-Resorces/inverted-dice-6.png
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+*.generated.swift
+
+.DS_Store
