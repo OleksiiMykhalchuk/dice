@@ -85,13 +85,3 @@ private let dice = [
         }
     }
 }
-extension UIImageView {
-  func rotate() {
-    let rotation = CABasicAnimation(keyPath: "transfprm.rotation.z")
-    rotation.toValue = NSNumber(value: Double.pi * 2)
-    rotation.duration = 1
-    rotation.isCumulative = true
-    rotation.repeatCount = 1
-    self.layer.add(rotation, forKey: nil)
-  }
-}
