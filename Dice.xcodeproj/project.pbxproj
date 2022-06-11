@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AFA9577709B04B6ECBF4B29 /* Pods_Dice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEF83E6695568024819A669 /* Pods_Dice.framework */; };
+		881F72E128548DF600F18CF9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F72E028548DF600F18CF9 /* R.generated.swift */; };
 		883FCD6A2837E38600EFEC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FCD692837E38600EFEC79 /* AppDelegate.swift */; };
 		883FCD6C2837E38600EFEC79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FCD6B2837E38600EFEC79 /* SceneDelegate.swift */; };
 		883FCD6E2837E38600EFEC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FCD6D2837E38600EFEC79 /* ViewController.swift */; };
@@ -17,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		881F72E028548DF600F18CF9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		883FCD662837E38600EFEC79 /* Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883FCD692837E38600EFEC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		883FCD6B2837E38600EFEC79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		883FCD752837E38800EFEC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883FCD782837E38800EFEC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		883FCD7A2837E38800EFEC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D336FA47B925CF5F506B33 /* Pods-Dice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dice.release.xcconfig"; path = "Target Support Files/Pods-Dice/Pods-Dice.release.xcconfig"; sourceTree = "<group>"; };
+		FCF06A1ED3057A4A1222FDF4 /* Pods-Dice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dice.debug.xcconfig"; path = "Target Support Files/Pods-Dice/Pods-Dice.debug.xcconfig"; sourceTree = "<group>"; };
+		FEEF83E6695568024819A669 /* Pods_Dice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFA9577709B04B6ECBF4B29 /* Pods_Dice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E86DC4EE5A5CA1A87230851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCF06A1ED3057A4A1222FDF4 /* Pods-Dice.debug.xcconfig */,
+				D4D336FA47B925CF5F506B33 /* Pods-Dice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8828A25C28515AD900BBF001 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				883FCD6D2837E38600EFEC79 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		883FCD5D2837E38600EFEC79 = {
 			isa = PBXGroup;
 			children = (
+				881F72E028548DF600F18CF9 /* R.generated.swift */,
 				883FCD682837E38600EFEC79 /* Dice */,
 				883FCD672837E38600EFEC79 /* Products */,
+				1E86DC4EE5A5CA1A87230851 /* Pods */,
+				D73E9FBBB65B93744D74A95A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +85,9 @@
 		883FCD682837E38600EFEC79 /* Dice */ = {
 			isa = PBXGroup;
 			children = (
+				8828A25C28515AD900BBF001 /* View */,
 				883FCD692837E38600EFEC79 /* AppDelegate.swift */,
 				883FCD6B2837E38600EFEC79 /* SceneDelegate.swift */,
-				883FCD6D2837E38600EFEC79 /* ViewController.swift */,
 				883FCD6F2837E38600EFEC79 /* Main.storyboard */,
 				883FCD752837E38800EFEC79 /* Assets.xcassets */,
 				883FCD772837E38800EFEC79 /* LaunchScreen.storyboard */,
@@ -70,6 +97,14 @@
 			path = Dice;
 			sourceTree = "<group>";
 		};
+		D73E9FBBB65B93744D74A95A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEEF83E6695568024819A669 /* Pods_Dice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +112,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 883FCD7D2837E38800EFEC79 /* Build configuration list for PBXNativeTarget "Dice" */;
 			buildPhases = (
+				D540EEFBFAF7394DE34EA56F /* [CP] Check Pods Manifest.lock */,
+				881F72DE28548B0D00F18CF9 /* SwiftLint */,
+				881F72DF28548B1000F18CF9 /* RSwift */,
 				883FCD622837E38600EFEC79 /* Sources */,
 				883FCD632837E38600EFEC79 /* Frameworks */,
 				883FCD642837E38600EFEC79 /* Resources */,
+				16948CEE23AE7EC69B658DD4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +175,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16948CEE23AE7EC69B658DD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dice/Pods-Dice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dice/Pods-Dice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dice/Pods-Dice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		881F72DE28548B0D00F18CF9 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		881F72DF28548B1000F18CF9 /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		D540EEFBFAF7394DE34EA56F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		883FCD622837E38600EFEC79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,6 +263,7 @@
 			files = (
 				883FCD6E2837E38600EFEC79 /* ViewController.swift in Sources */,
 				883FCD6A2837E38600EFEC79 /* AppDelegate.swift in Sources */,
+				881F72E128548DF600F18CF9 /* R.generated.swift in Sources */,
 				883FCD742837E38600EFEC79 /* Dice.xcdatamodeld in Sources */,
 				883FCD6C2837E38600EFEC79 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +407,7 @@
 		};
 		883FCD7E2837E38800EFEC79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF06A1ED3057A4A1222FDF4 /* Pods-Dice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +436,7 @@
 		};
 		883FCD7F2837E38800EFEC79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D336FA47B925CF5F506B33 /* Pods-Dice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
